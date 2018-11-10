@@ -1,0 +1,30 @@
+@import '../../../../../../assets/config/fonts';
+
+:host{
+
+    .input-container{
+        display:flex;
+        align-items: center;
+        height: 49px;
+        justify-content: space-evenly;
+    }
+
+
+    .drop-down{
+        flex: 0 0 52%;
+        height: 30px;
+    }
+    .arrow{
+        border: 1px solid black;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 5%;
+    }
+    .title{
+        font-size:$title;
+        font-weight: bold;
+    }
+   
+}

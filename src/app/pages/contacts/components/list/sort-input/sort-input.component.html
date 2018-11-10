@@ -1,0 +1,12 @@
+<div class="input-container">
+  <span class="title"> My Contacts</span>
+  <select class="drop-down" (change)="onChange($event.target.value)">
+    <option *ngFor="let type of sortTypesKeys()" [value]="sortTypes[type]">
+      {{type}}
+    </option>
+  </select>
+  <div class="arrow" (click)="toggleDirection()">
+    <i *ngIf="direction==='ASC'" class="fas fa-long-arrow-alt-down"></i>
+    <i *ngIf="direction==='DEC'" class="fas fa-long-arrow-alt-up"></i>
+  </div>
+</div>

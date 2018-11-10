@@ -1,0 +1,23 @@
+@import '../../../assets/config/utils';
+
+
+
+
+:host{
+    @extend %page;
+
+    .contacts-container{
+        @extend %body;
+        
+        display: flex;
+
+
+        list{
+            width:30%;
+        }
+
+        details{
+            width:70%;
+        }
+    }
+}

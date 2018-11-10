@@ -1,0 +1,9 @@
+<div class="item" (click)="itemSelect.emit(item.id)">
+  <img [src]="item.picture" width="50" height="50">
+  <div class="content">
+    <span class="title">{{item.name}}</span>
+    <span>{{item.companyName}}</span>
+    <span class="updated">Updated: {{item.lastUpdated}}</span>
+  </div>
+  <i class="fas fa-caret-right right-r"></i>
+</div>

@@ -1,0 +1,6 @@
+<div class="list-container">
+  <sort-input (changeSort)="toggleSorting($event)"></sort-input>
+  <div class="list-body">
+    <item *ngFor="let item of list" [item]="item" (itemSelect)="itemSelected.emit($event)"></item>
+  </div>
+</div>

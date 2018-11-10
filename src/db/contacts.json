@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "name": "Steven Eason",
+        "companyName": "Trust Management, Inc.",
+        "picture": "https://vignette.wikia.nocookie.net/bungostraydogs/images/1/1e/Profile-icon-9.png/revision/latest?cb=20171030104015",
+        "lastUpdated": "2018-08-21"
+    },
+    {
+        "id": 2,
+        "name": "Douglas Bouey",
+        "companyName": "Catalyst Strategic Consultants Ltd",
+        "picture": "https://vignette.wikia.nocookie.net/bungostraydogs/images/1/1e/Profile-icon-9.png/revision/latest?cb=20171030104015",
+        "lastUpdated": "2018-08-11"
+    },
+    {
+        "id": 3,
+        "name": "Anthony Guglielmin",
+        "companyName": "Ballard Power Systems Inc",
+        "picture": "https://vignette.wikia.nocookie.net/bungostraydogs/images/1/1e/Profile-icon-9.png/revision/latest?cb=20171030104015",
+        "lastUpdated": "2018-08-20"
+    },
+    {
+        "id": 4,
+        "name": "Brad Wellicome",
+        "companyName": "Noralta Technologies Inc",
+        "picture": "https://vignette.wikia.nocookie.net/bungostraydogs/images/1/1e/Profile-icon-9.png/revision/latest?cb=20171030104015",
+        "lastUpdated": "2018-08-20"
+    },
+    {
+        "id": 5,
+        "name": "Monica Chudej",
+        "companyName": "Apple Inc.",
+        "picture": "https://vignette.wikia.nocookie.net/bungostraydogs/images/1/1e/Profile-icon-9.png/revision/latest?cb=20171030104015",
+        "lastUpdated": "2018-08-14"
+    }
+]

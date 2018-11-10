@@ -1,0 +1,40 @@
+@import '../../../../../../assets/config/fonts';
+
+
+
+
+:host{
+    padding: 7px;
+    .item{
+        display: flex;
+        font-size: $list-text-font;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0px 17px 0px 8px;
+        
+
+        .content{
+            display: flex;
+            flex-direction: column;
+            flex: 0 0 57%;
+
+            .title{
+                font-weight: bold;
+            }
+
+            .updated{
+                padding-top: 5px;
+                color:$updated-color;
+              
+            }
+        }
+
+        img{
+            border-radius: 50px;
+            border: 1px solid grey;
+        }
+        .right-r{
+            font-size:$arrow-right-font;
+        }
+    }
+}
