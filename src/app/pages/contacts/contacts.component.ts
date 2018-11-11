@@ -25,7 +25,6 @@ export class ContactsComponent implements OnInit {
 
     this.contacts_srv.getDetails().subscribe((response: Details[]) => {
       this.details = response;
-      this.contactDetails = this.details[0];
     });
   }
 

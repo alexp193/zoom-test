@@ -45,5 +45,6 @@ export class ListComponent implements OnInit {
     }
 
     this.select = this.list[0].id;
+    this.itemSelected.emit(this.list[0].id);
   }
 }
