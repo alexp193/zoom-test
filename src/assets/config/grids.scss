@@ -1,0 +1,63 @@
+%header-grid{
+    display: grid;
+    grid-template-areas: 'a b b b c c'
+                         'a d d d e e';
+                           
+    
+    .item1 {
+       grid-area: a;
+    }
+    .item2 {
+       grid-area: b
+    }
+    .item3 {
+       grid-area: c;
+    }
+    .item4 {
+       grid-area: d;
+    }
+    .item5 {
+       grid-area: e;
+    }
+}
+
+%content-grid{
+    display: grid;
+    grid-template-areas: 'a b b b c c'
+                         'a d e e f f'
+                         'a g h h h h'
+                         'a g h h h h'
+                         'a i j j j j'  ;
+                                
+           
+    .item1 {
+       grid-area: a;
+    }
+    .item2 {
+       grid-area: b;
+    }
+    .item3 {
+       grid-area: c;
+    }
+    .item4 {
+        grid-area: d;
+     }
+     .item5 {
+        grid-area: e;
+     }
+     .item6 {
+        grid-area: f;
+     }
+     .item7 {
+        grid-area: g;
+     }
+     .item8 {
+        grid-area: h;
+     }
+     .item9 {
+        grid-area: i;
+     }
+     .item10 {
+        grid-area: j;
+     }
+}

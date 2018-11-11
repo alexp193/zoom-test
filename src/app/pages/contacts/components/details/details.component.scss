@@ -1,11 +1,34 @@
+@import '../../../../../assets/config/grids';
+
+
 :host{
     .details-container{
-        .contact-details{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
 
-        }
+        .contact-details{
+            @extend %header-grid;
+            
+            flex: 0 0 30%;
+            border: 1px solid black;
+      
+
+             *{
+                border:1px solid black;
+              }
+       }
 
         .company-details{
-
+            @extend %content-grid;
+            
+            flex: 0 0 70%;
+            border: 1px solid red;
+            
+      
+            *{
+                border:1px solid black;
+            }
         }
     }
 }

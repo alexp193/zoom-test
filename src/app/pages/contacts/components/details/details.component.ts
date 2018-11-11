@@ -3,7 +3,7 @@ import { Details } from 'src/app/interfaces/details.interface';
 import { Input } from '@angular/core';
 
 @Component({
-  selector: 'details',
+  selector: 'contact-details',
   templateUrl: './details.component.html',
   styleUrls: ['./details.component.scss']
 })
