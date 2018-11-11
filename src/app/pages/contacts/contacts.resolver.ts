@@ -4,7 +4,6 @@ import { Resolve } from '@angular/router';
 
 import { ContactsService } from 'src/app/services/http.service';
 import { Contact } from 'src/app/interfaces/contact.interface';
-import { ActivatedRouteSnapshot } from '@angular/router';
 
 import { Observable } from 'rxjs/Observable';
 import {forkJoin} from 'rxjs';
@@ -13,9 +12,12 @@ import {forkJoin} from 'rxjs';
 
 @Injectable()
 export class ContactResolver implements Resolve<Observable<any>> {
-    constructor(private contacts_srv: ContactsService) { }
+    constructor(private contacts_srv: ContactsService) { } 
 
-    resolve(route: ActivatedRouteSnapshot) {
+
+    //open contacts(current home page - '') route only when resolver gets data from api calls
+
+    resolve() {
         return forkJoin([
             this.contacts_srv.getContacts(),
             this.contacts_srv.getDetails()
