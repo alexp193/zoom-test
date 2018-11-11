@@ -3,7 +3,6 @@ import { Contact } from 'src/app/interfaces/contact.interface';
 import { Input } from '@angular/core';
 import { Output } from '@angular/core';
 import { EventEmitter } from '@angular/core';
-import { debounce } from 'rxjs-compat/operator/debounce';
 
 
 @Component({

@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { sortTypes } from '../../../../../enums/sortType.enum'
 import { Output } from '@angular/core';
 import { EventEmitter } from '@angular/core';
-import { debounce } from 'rxjs/internal/operators/debounce';
 
 
 @Component({
