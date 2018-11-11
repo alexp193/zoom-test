@@ -13,13 +13,15 @@ import { EventEmitter } from '@angular/core';
 export class ItemComponent implements OnInit {
 
   @Input() item: Contact;
+  @Input() selected: number = 0;
   @Output() itemSelect = new EventEmitter();
 
 
   constructor() { }
 
   ngOnInit() {
-    
+
   }
+
 
 }

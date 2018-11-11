@@ -1,4 +1,6 @@
 @import '../../../../../../assets/config/fonts';
+@import '../../../../../../assets/config/colors';
+
 
 
 
@@ -10,9 +12,8 @@
         font-size: $list-text-font;
         justify-content: space-around;
         align-items: center;
-        padding: 0px 17px 0px 8px;
+        padding: 0px 17px 0px 23px;
         
-
         .content{
             display: flex;
             flex-direction: column;
@@ -36,5 +37,13 @@
         .right-r{
             font-size:$arrow-right-font;
         }
+
+        i{
+            color:$color-white;
+            &.selected{
+               color:$color-black;
+            }
+        }
+
     }
 }

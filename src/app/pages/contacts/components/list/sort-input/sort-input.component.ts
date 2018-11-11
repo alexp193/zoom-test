@@ -26,20 +26,14 @@ export class SortInputComponent implements OnInit {
   }
 
   sortTypesKeys(): Array<string> {
-    var keys = Object.keys(this.sortTypes);
+    const keys = Object.keys(this.sortTypes);
     return keys.slice(keys.length / 2);
   }
 
-  selectSortOption(event) {
-
-  }
-
   onChange(val) {
-    this.sortType = this.getSortTypeByValue(this.sortTypes[val])
-    this.changeSort.emit({
-      type: this.sortType,
-      direction: this.direction
-    });
+    const sortType = this.getSortTypeByValue(this.sortTypes[val])
+    this.sendDirections({ type: sortType, direction: this.direction })
+    this.sortType = sortType;
   }
 
   getSortTypeByValue(type) {
@@ -49,11 +43,13 @@ export class SortInputComponent implements OnInit {
   }
 
   toggleDirection() {
-    this.direction = this.direction == 'ASC' ? 'DEC' : 'ASC';
-    this.changeSort.emit({
-      type: this.sortType,
-      direction: this.direction
-    });
+    const dir = this.direction == 'ASC' ? 'DEC' : 'ASC';
+    this.sendDirections({ type: this.sortType, direction: dir })
+    this.direction = dir;
+  }
+
+  sendDirections(object) {
+    this.changeSort.emit(object);
   }
 
 }

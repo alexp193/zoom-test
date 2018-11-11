@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ContactsService } from 'src/app/services/http.service';
 import { Contact } from 'src/app/interfaces/contact.interface';
 import { Details } from 'src/app/interfaces/details.interface';
+import { debounce } from 'rxjs-compat/operator/debounce';
 
 @Component({
   selector: 'contacts',
@@ -12,7 +13,7 @@ export class ContactsComponent implements OnInit {
 
   public contacts: Array<Contact> = [];
   public details: Array<Details> = [];
-  public currentDetails: Array<Details> = [];
+  public contactDetails: Details;
 
 
   constructor(private contacts_srv: ContactsService) { }
@@ -24,12 +25,14 @@ export class ContactsComponent implements OnInit {
 
     this.contacts_srv.getDetails().subscribe((response: Details[]) => {
       this.details = response;
+      this.contactDetails = this.details[0];
     });
   }
 
 
   showItemDetails(id) {
-    debugger
+    const selectedContact: Details = this.details.find(item => item.id === id);
+    this.contactDetails = selectedContact;
   }
 
 }

@@ -5,5 +5,7 @@
     <span>{{item.companyName}}</span>
     <span class="updated">Updated: {{item.lastUpdated}}</span>
   </div>
-  <i class="fas fa-caret-right right-r"></i>
+  <div class="right-icon">
+    <i class="fas fa-caret-right right-r" [ngClass]="{'selected': selected == item.id}"></i>
+  </div>
 </div>

@@ -16,6 +16,9 @@ export class ListComponent implements OnInit {
   @Input() list: Array<Contact> = [];
   @Output() itemSelected = new EventEmitter();
 
+  public select: any = 0;
+
+
   constructor() {
 
   }
@@ -40,5 +43,7 @@ export class ListComponent implements OnInit {
           return -1;
       });
     }
+
+    this.select = this.list[0].id;
   }
 }
