@@ -2,6 +2,8 @@
     display: grid;
     grid-template-areas: 'a b b b c c'
                          'a d d d e e';
+                         
+    grid-template-columns: 16.666% 16.666% 16.666% 16.666% 16.666% 16.666%;
                            
     
     .item1 {
@@ -28,6 +30,9 @@
                          'a g h h h h'
                          'a g h h h h'
                          'a i j j j j'  ;
+
+    grid-template-columns: 16.666% 16.666% 16.666% 16.666% 16.666% 16.666%;
+                         
                                 
            
     .item1 {

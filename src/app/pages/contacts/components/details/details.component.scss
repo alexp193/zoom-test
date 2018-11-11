@@ -1,4 +1,6 @@
 @import '../../../../../assets/config/grids';
+@import '../../../../../assets/config/fonts';
+@import '../../../../../assets/config/colors';
 
 
 :host{
@@ -6,16 +8,15 @@
         display: flex;
         flex-direction: column;
         height: 100%;
+        font-size: $details-text-font;
 
         .contact-details{
             @extend %header-grid;
             
             flex: 0 0 30%;
-            border: 1px solid black;
-      
-
-             *{
-                border:1px solid black;
+           
+             .cell{
+                word-break: break-all;
               }
        }
 
@@ -23,12 +24,33 @@
             @extend %content-grid;
             
             flex: 0 0 70%;
-            border: 1px solid red;
             
-      
-            *{
-                border:1px solid black;
+            .cell{
+                word-break: break-all;
             }
         }
+
+        .item1{        
+            .img{
+                max-width: 80%;
+                border-radius: 50px;
+                border:1px solid $color-gray; 
+                margin: 10px;
+            }
+        }
+
+        .header{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .title{
+            font-size:$title; 
+        }
+    }
+
+    .bold{
+        font-weight: bold;
     }
 }

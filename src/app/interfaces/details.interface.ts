@@ -4,18 +4,20 @@ import { TechProducts } from './techProducts.interface';
 
 export interface Details {
     id: number;
-    industry: Array<string>
+    industry: Array<string>,
+    employees: number,
+    revenue: string,
     techProducts: Array<TechProducts>;
-    companyDescription:string;
+    companyDescription: string;
     name: string;
     companyName: boolean;
     picture: string;
     companyLogo: string;
     location: Array<Location>;
     website: boolean;
-    title:string;
+    title: string;
     lastUpdated: string;
-    phone:string;
+    phone: string;
     email: string;
 }
 

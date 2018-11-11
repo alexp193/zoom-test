@@ -1,4 +1,4 @@
 <div *ngIf="contacts.length>0 && details.length>0" class="contacts-container">
-  <list [list]="contacts" (itemSelected)="showItemDetails($event)" style="border:1px solid black"></list>
-  <contact-details [contactDetails]="contactDetails" style="border:1px solid black"></contact-details>
+  <list [list]="contacts" (itemSelected)="showItemDetails($event)" ></list>
+  <contact-details [contactDetails]="contactDetails" ></contact-details>
 </div>

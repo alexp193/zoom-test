@@ -1,21 +1,67 @@
 <div class="details-container">
   <div class="contact-details">
-    <div class="item1"></div>
-    <div class="item2"></div>
-    <div class="item3"></div>
-    <div class="item4"></div>
-    <div class="item5"></div>
+    <div class="cell item1">
+      <img class="img" [src]="contactDetails.picture">
+    </div>
+    <div class="cell  header item2">
+      <span class="bold title">{{contactDetails.name}}</span>
+      <span>{{contactDetails.title}} at {{contactDetails.companyName}}</span>
+    </div>
+    <div class="cell header item3">
+      <span>Updated: {{contactDetails.lastUpdated}}</span>
+    </div>
+    <div class="cell header item4">
+      <span>
+        <span class="bold">Phone: </span>{{contactDetails.phone}}</span>
+      <span>
+        <span class="bold">Email: </span>{{ contactDetails.email}}</span>
+    </div>
+    <div class="cell header item5">
+      <span class="bold">Office Address:</span>
+      <span>{{contactDetails.location.street}}, {{contactDetails.location.city}}</span>
+      <span>{{contactDetails.location.state}},{{contactDetails.location.zipcode}}</span>
+      <span>{{contactDetails.location.country}}</span>
+    </div>
   </div>
   <div class="company-details">
-    <div class="item1"></div>
-    <div class="item2"></div>
-    <div class="item3"></div>
-    <div class="item4"></div>
-    <div class="item5"></div>
-    <div class="item6"></div>
-    <div class="item7"></div>
-    <div class="item8"></div>
-    <div class="item9"></div>
-    <div class="item10"></div>
+    <div class="cell item1">
+      <img class="img" [src]="contactDetails.picture">
+    </div>
+    <div class="cell header item2">
+      <span class="bold title">{{contactDetails.name}}</span>
+      <span>{{contactDetails.companyName}} at {{contactDetails.companyName}}</span>
+    </div>
+    <div class="cell header item3">
+      <span>
+        <span class="bold">Eployees: </span>{{contactDetails.employees}}</span>
+      <span>
+        <span class="bold">Revenue: </span>{{ contactDetails.revenue}}</span>
+    </div>
+    <div class="cell header item4">
+      <span class="bold">Phone (HQ):</span>
+      <span class="bold">Website:</span>
+    </div>
+    <div class="cell header item5">
+      <span>{{contactDetails.phone}}</span>
+      <span>{{contactDetails.website}}</span>
+    </div>
+    <div class="cell header  item6">
+      <span class="bold">HQ Address:</span>
+      <span>{{contactDetails.location.street}}, {{contactDetails.location.city}}</span>
+      <span>{{contactDetails.location.state}},{{contactDetails.location.zipcode}}</span>
+      <span>{{contactDetails.location.country}}</span>
+    </div>
+    <div class="cell item7">
+      <span class="bold">Company Desctiption:</span>
+    </div>
+    <div class="cell item8">
+      <p>{{contactDetails.companyDescription}}</p>
+    </div>
+    <div class="cell item9">
+      <span class="bold">Industry:</span>
+    </div>
+    <div class="cell item10">
+      <p>{{contactDetails.industry | sep}}</p>
+    </div>
   </div>
 </div>

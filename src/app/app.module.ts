@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpModule} from '@angular/http';             
+import { HttpModule} from '@angular/http';
+import { SeperatePipe } from './pipes/seperate.pipe';
+
 
 
 import { AppComponent } from './app.component';
@@ -18,7 +20,8 @@ import { SortInputComponent } from './pages/contacts/components/list/sort-input/
     ListComponent,
     DetailsComponent,
     ItemComponent,
-    SortInputComponent
+    SortInputComponent,
+    SeperatePipe
   ],
   imports: [
     HttpModule,
