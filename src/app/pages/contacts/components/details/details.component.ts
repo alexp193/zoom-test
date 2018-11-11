@@ -11,6 +11,9 @@ export class DetailsComponent implements OnInit {
 
   @Input() contactDetails: Details;
 
+  private logo = require("../../../../../assets/images/zoomlogo.png");
+  
+
   constructor() { }
 
   ngOnInit() {

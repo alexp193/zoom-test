@@ -8,9 +8,11 @@
     
     .item1 {
        grid-area: a;
+       padding-right: 10px
     }
     .item2 {
-       grid-area: b
+       grid-area: b;
+       padding-right: 25px;
     }
     .item3 {
        grid-area: c;
@@ -37,6 +39,8 @@
            
     .item1 {
        grid-area: a;
+       padding-right: 10px
+       
     }
     .item2 {
        grid-area: b;

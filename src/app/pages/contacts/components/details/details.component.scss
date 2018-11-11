@@ -4,6 +4,8 @@
 
 
 :host{
+    border-left: 3px solid $color-milk-glass;
+    padding-left: 24px;
     .details-container{
         display: flex;
         flex-direction: column;
@@ -24,6 +26,7 @@
             @extend %content-grid;
             
             flex: 0 0 70%;
+            border-top: 2px solid $color-milk-glass;
             
             .cell{
                 word-break: break-all;
@@ -37,7 +40,14 @@
                 border:1px solid $color-gray; 
                 margin: 10px;
             }
+
+           &.squ{
+               .img{
+                border-radius:0;
+               }
+           }
         }
+      
 
         .header{
             display: flex;

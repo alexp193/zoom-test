@@ -24,12 +24,12 @@
     </div>
   </div>
   <div class="company-details">
-    <div class="cell item1">
-      <img class="img" [src]="contactDetails.picture">
+    <div class="cell item1 squ">
+      <img class="img" [src]="logo">
     </div>
     <div class="cell header item2">
-      <span class="bold title">{{contactDetails.name}}</span>
-      <span>{{contactDetails.companyName}} at {{contactDetails.companyName}}</span>
+      <span class="bold title">{{contactDetails.companyName}}</span>
+      <span>{{contactDetails.companyName}}</span>
     </div>
     <div class="cell header item3">
       <span>
@@ -52,7 +52,7 @@
       <span>{{contactDetails.location.country}}</span>
     </div>
     <div class="cell item7">
-      <span class="bold">Company Desctiption:</span>
+      <span class="bold">Company Description:</span>
     </div>
     <div class="cell item8">
       <p>{{contactDetails.companyDescription}}</p>
