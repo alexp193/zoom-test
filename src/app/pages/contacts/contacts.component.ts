@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { ContactsService } from 'src/app/services/http.service';
 import { Contact } from 'src/app/interfaces/contact.interface';
 import { Details } from 'src/app/interfaces/details.interface';
 import { debounce } from 'rxjs-compat/operator/debounce';
+import { ActivatedRoute } from '@angular/router';
+import { debug } from 'util';
 
 @Component({
   selector: 'contacts',
@@ -11,21 +12,20 @@ import { debounce } from 'rxjs-compat/operator/debounce';
 })
 export class ContactsComponent implements OnInit {
 
-  public contacts: Array<Contact> = [];
-  public details: Array<Details> = [];
+  public details: Array<Details>;
+  public contacts: Array<Contact>;
+
   public contactDetails: Details;
+  public data: Object = { contacts: Array, details: Array }
 
 
-  constructor(private contacts_srv: ContactsService) { }
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
-    this.contacts_srv.getContacts().subscribe((response: Contact[]) => {
-      this.contacts = response;
-    });
 
-    this.contacts_srv.getDetails().subscribe((response: Details[]) => {
-      this.details = response;
-    });
+    this.data = this.route.snapshot.data.resolve;
+    this.details = this.data['details'];
+
   }
 
 

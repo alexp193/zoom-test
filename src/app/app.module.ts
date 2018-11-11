@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule} from '@angular/http';
 import { SeperatePipe } from './pipes/seperate.pipe';
+import { RoutingModule } from './modules/routing.module';
+
 
 
 
@@ -12,6 +14,7 @@ import { ListComponent } from './pages/contacts/components/list/list.component';
 import { DetailsComponent } from './pages/contacts/components/details/details.component';
 import { ItemComponent } from './pages/contacts/components/list/item/item.component';
 import { SortInputComponent } from './pages/contacts/components/list/sort-input/sort-input.component';
+import { ContactResolver } from 'src/app/pages/contacts/contacts.resolver';
 
 @NgModule({
   declarations: [
@@ -25,9 +28,10 @@ import { SortInputComponent } from './pages/contacts/components/list/sort-input/
   ],
   imports: [
     HttpModule,
-    BrowserModule
+    BrowserModule,
+    RoutingModule
   ],
-  providers: [ContactsService],
+  providers: [ContactsService,ContactResolver],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
